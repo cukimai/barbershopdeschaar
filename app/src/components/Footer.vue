@@ -8,7 +8,7 @@
 				flat
 				tile
 		>
-			<v-card-title class="amber">
+			<v-card-title class="green lighten-1">
 				<strong class="subheading">Blijf op de hoogte van ons nieuwste social media accounts!</strong>
 
 				<v-spacer></v-spacer>
@@ -27,7 +27,7 @@
 			</v-card-title>
 
 			<v-card-text class="py-2 white--text text-center">
-				{{ new Date().getFullYear() }} — <strong>Barbershopdeschaar.nl</strong> Made by <strong>Tom Soplanit</strong>
+				{{ new Date().getFullYear() }} — <strong>Barbershopdeschaar.nl</strong> Made by <strong>Tom</strong>
 			</v-card-text>
 		</v-card>
 	</v-footer>

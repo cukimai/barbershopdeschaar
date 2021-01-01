@@ -1,6 +1,6 @@
 <template>
 	<v-app id="inspire">
-		<v-navigation-drawer app v-model="drawer" dark color="orange">
+		<v-navigation-drawer app v-model="drawer" dark color="green darken-4">
 			<v-list-item>
 				<v-list-item-content>
 					<v-list-item-title class="title">
@@ -32,10 +32,16 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-app-bar app color="amber" dark>
+		<v-app-bar app color="green lighten-1" dark>
 			<v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-			<v-toolbar-title>Barbershop de Schaar</v-toolbar-title>
+		<v-img
+				max-height="150"
+				max-width="250"
+				src="require('../assets/logo.jpg')"
+		> Hier komt de logo
+
+		</v-img>
 			<v-spacer></v-spacer>
 
 			<v-btn icon v-for="i in headerIcons">
@@ -67,10 +73,10 @@ export default {
           { title: 'Contact', icon: 'mdi-map-marker',to:'/Contact', },
       ],
 	  headerIcons: [
-		  { icon:'mdi-heart'},
+		  { icon:'mdi-phone'},
+		  { icon:'mdi-whatsapp'},
 		  { icon:'mdi-facebook'},
 		  { icon:'mdi-instagram'},
-		  { icon:'mdi-whatsapp'},
 	  ],
       right: null,
   }),

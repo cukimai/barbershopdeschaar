@@ -2,11 +2,11 @@
 	<div>
 		<v-container class="mt-16">
 			<v-row>
-				<v-col v-for="adv in advertentie1" cols="12" md="3">
-					<v-card  shaped >
+				<v-col v-for="adv in advertentie1" cols="12" md="3" sm="6">
+					<v-card height="400"  shaped >
 						<div class="d-flex justify-center pt-3">
-							<v-avatar size="90" color="amber">
-								<v-icon dark size="62" center>{{adv.icon}}</v-icon>
+							<v-avatar size="120" color="green darken-4">
+								<v-icon dark size="70" center>{{adv.icon}}</v-icon>
 							</v-avatar>
 						</div>
 						<v-card-title class="justify-center ">
@@ -17,23 +17,39 @@
 						</v-card-text>
 					</v-card>
 				</v-col>
+				<v-col cols="12" md="3" sm="6">
+					<v-card height="400"  shaped >
+						<div class="d-flex justify-center pt-3">
+							<v-avatar size="120" color="green darken-4">
+								<v-icon dark size="70" center>mdi-whatsapp</v-icon>
+							</v-avatar>
+						</div>
+						<v-card-title class="justify-center ">
+							Beschikbaarheid
+						</v-card-title>
+						<v-card-text>
+							Wij zijn 24/7 Whatsapp-bereikbaar voor jullie.
+							U kunt ons bereiken op het nummer: <a href="tel:0611263861">0611263861</a>.
+						</v-card-text>
+					</v-card>
+				</v-col>
 			</v-row>
 		</v-container>
 
-		<v-container fluid class="amber my-16 py-10">
+		<v-container fluid class="green lighten-1 my-16 py-10">
 			<div v-for="adv in advertentie2" class="text-center white--text">
 				<v-avatar size="100" color="white">
 					<v-icon size="80" color="black">
 						{{adv.icon}}
 					</v-icon>
 				</v-avatar>
-				<v-card-title class="justify-center text-white text-h5" >
+				<v-card-title class="justify-center text-white text-h6" >
 					{{adv.text}}
 				</v-card-title>
 				<v-rating
 						v-model="rating"
-						background-color="indigo lighten-3"
-						color="indigo"
+						background-color="red"
+						color="red"
 						size="32"
 				></v-rating>
 			</div>
@@ -45,13 +61,20 @@
     export default {
         data: () => ({
             advertentie1:[
-				{ icon:'mdi-crown' ,title:'Klant is koning',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt laoreet. Nulla vestibulum est vel gravida tristique. Maecenas ultrices urna in justo placerat imperdiet. Praesent ut nisl ipsum. Proin bibendum, justo vitae auctor fringilla, nisl nisi commodo tortor, in finibus lorem arcu ut mi. Cras condimentum orci sit amet sodales consectetur. Donec egestas finibus consectetur. Sed iaculis nisl nec libero tincidunt, vitae porttitor nunc condimentum. Sed tellus nisl, tristique ut lacus a, tempus feugiat augue.'},
-				{ icon:'mdi-hair-dryer' ,title:'test',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt laoreet. Nulla vestibulum est vel gravida tristique. Maecenas ultrices urna in justo placerat imperdiet. Praesent ut nisl ipsum. Proin bibendum, justo vitae auctor fringilla, nisl nisi commodo tortor, in finibus lorem arcu ut mi. Cras condimentum orci sit amet sodales consectetur. Donec egestas finibus consectetur. Sed iaculis nisl nec libero tincidunt, vitae porttitor nunc condimentum. Sed tellus nisl, tristique ut lacus a, tempus feugiat augue.'},
-				{ icon:'mdi-content-cut' ,title:'test',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt laoreet. Nulla vestibulum est vel gravida tristique. Maecenas ultrices urna in justo placerat imperdiet. Praesent ut nisl ipsum. Proin bibendum, justo vitae auctor fringilla, nisl nisi commodo tortor, in finibus lorem arcu ut mi. Cras condimentum orci sit amet sodales consectetur. Donec egestas finibus consectetur. Sed iaculis nisl nec libero tincidunt, vitae porttitor nunc condimentum. Sed tellus nisl, tristique ut lacus a, tempus feugiat augue.'},
-				{ icon:'mdi-baby-face' ,title:'test',text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum tincidunt laoreet. Nulla vestibulum est vel gravida tristique. Maecenas ultrices urna in justo placerat imperdiet. Praesent ut nisl ipsum. Proin bibendum, justo vitae auctor fringilla, nisl nisi commodo tortor, in finibus lorem arcu ut mi. Cras condimentum orci sit amet sodales consectetur. Donec egestas finibus consectetur. Sed iaculis nisl nec libero tincidunt, vitae porttitor nunc condimentum. Sed tellus nisl, tristique ut lacus a, tempus feugiat augue.'},
+				{ icon:'mdi-crown' ,title:'De klant',text:'De klanten zijn bij ons koning, dit word nog aangepast'},
+				{ icon:'mdi-content-cut' ,title:'Kwaliteit',text:'Wij als barbershop de Achterhoek hebben meer dan 16 jaar ervaring in het barbersvak!\n' +
+                        'Wij werken alleen met kappers die ervaring hebben en wij streven ernaar om ons werk elke keer beter te doen.\n' +
+                        'Ons doel is om de klant de beste kwaliteit te leveren en een leuke ervaring bij ons,\n' +
+                        'Onder anderen werken wij met kwaliteits producten.\n' +
+                        'Wij maken gebruik van de beste haarproducten.'},
+				{ icon:'mdi-parking' ,title:'Gratis Parkeren',text:'Op ons locatie is genoeg parkeergelegenheid, wij hebben rondom de barbershop meer dan 150 parkeerplekken\n' +
+                        'en zijn daarom gemakkelijk te bereiken.\n' +
+                        'Naast ons barbershop bevind zich ook de: Action,Dekamarkt,Kruidvat,Eetpunt en bloemist'},
+				// { icon:'mdi-whatsapp' ,title:'Bereikbaarheid',text:'Wij zijn 24/7 Whatsapp-bereikbaar voor jullie.\n' +
+                //         'U kunt ons bereiken op het nummer: 0612345678.'},
 			],
             advertentie2:[
-				{ icon:'mdi-currency-eur' ,title:'Korting',text:'Beoordeel ons nu op google en ontvang eenmalig 5 euro korting!'},
+				{ icon:'mdi-currency-eur' ,title:'Korting',text:'Beoordeel ons nu op google en ontvang eenmalig 2 euro korting op wax!'},
 			]
         }),
     }

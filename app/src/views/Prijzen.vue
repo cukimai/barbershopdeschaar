@@ -1,16 +1,14 @@
 <template>
-	<div class="about">
-		<h1>This is an prijzen page</h1>
-	</div>
+	<PriceTable></PriceTable>
 </template>
 
 <script>
-    import HelloWorld from '@/components/HelloWorld.vue'
+import PriceTable from '@/components/PriceTable.vue'
 
     export default {
         name: 'Prijzen',
         components: {
-            HelloWorld
+            PriceTable
         }
     }
 </script>
