@@ -3,35 +3,35 @@
 		<v-lazy>
 	<v-carousel height="550" v-model="model">
 		<v-carousel-item
-				:src="require('../assets/IMG-20200105-WA0020.jpg')"
+				:src="require('../assets/crs1.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200616-WA0011.jpg')"
+				:src="require('../assets/crs2.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200615-WA0018.jpg')"
+				:src="require('../assets/crs3.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200616-WA0048.jpg')"
+				:src="require('../assets/crs4.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200105-WA0037.jpg')"
+				:src="require('../assets/crs5.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200615-WA0040.jpg')"
+				:src="require('../assets/crs6.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200616-WA0036.jpg')"
+				:src="require('../assets/crs7.webp')"
 		>
 		</v-carousel-item>
 		<v-carousel-item
-				:src="require('../assets/IMG-20200616-WA0053.jpg')"
+				:src="require('../assets/crs8.webp')"
 		>
 		</v-carousel-item>
 	</v-carousel>

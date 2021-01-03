@@ -40,7 +40,7 @@
 				contain
 				dark
 				position="start"
-				src="http://0314media.nl/img/logo.png"
+				src="http://0314media.nl/img/logo.webp"
 				width="100"
 		>
 		</v-img>
