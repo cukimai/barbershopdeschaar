@@ -34,17 +34,19 @@
 
 		<v-app-bar app color="green lighten-1" dark>
 			<v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
 		<v-img
-				max-height="150"
-				max-width="250"
-				src="require('../assets/logo.jpg')"
-		> Hier komt de logo
-
+				:style="height"
+				height="80"
+				contain
+				dark
+				position="start"
+				src="http://0314media.nl/img/logo.png"
+				width="100"
+		>
 		</v-img>
 			<v-spacer></v-spacer>
 
-			<v-btn icon v-for="i in headerIcons">
+			<v-btn icon v-for="i in headerIcons" :href="i.link">
 				<v-icon>{{i.icon}}</v-icon>
 			</v-btn>
 		</v-app-bar>
@@ -59,24 +61,33 @@
 <script>
 
 export default {
+	computed: {
+		height () {
+			switch (this.$vuetify.breakpoint.name) {
+				case 'xs': return 'margin-top:1.2em'
+			}
+		},
+	},
   name: 'App',
 
   components: {
   },
+
 
   data: () => ({
 	 drawer: null,
       items: [
           { title: 'Home', icon: 'mdi-view-dashboard',to:'/', },
           { title: 'Prijzen', icon: 'mdi-currency-eur',to:'/Prijzen', },
-          { title: 'Over ons', icon: 'mdi-information-outline',to:'/About', },
+		  { title: 'Galerij', icon: 'mdi-camera',to:'/Galerij', },
+		  { title: 'Over ons', icon: 'mdi-information-outline',to:'/About', },
           { title: 'Contact', icon: 'mdi-map-marker',to:'/Contact', },
       ],
 	  headerIcons: [
-		  { icon:'mdi-phone'},
-		  { icon:'mdi-whatsapp'},
-		  { icon:'mdi-facebook'},
-		  { icon:'mdi-instagram'},
+		  { icon:'mdi-phone',link:'tel:0611263861'},
+		  { icon:'mdi-whatsapp',link:'https://api.whatsapp.com/send?phone=0634016976'},
+		  { icon:'mdi-facebook',link:'https://www.facebook.com/Barbershop-De-Achterhoek-109519520965648'},
+		  { icon:'mdi-instagram',link:'https://www.instagram.com/barbershopdeachterhoek/?hl=nl'},
 	  ],
       right: null,
   }),
