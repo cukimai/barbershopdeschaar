@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<v-lazy>
 	<v-carousel height="550" v-model="model">
 		<v-carousel-item
 				:src="require('../assets/IMG-20200105-WA0020.jpg')"
@@ -34,8 +35,13 @@
 		>
 		</v-carousel-item>
 	</v-carousel>
+		</v-lazy>
+		<v-lazy>
 		<Ads></Ads>
+		</v-lazy>
+		<v-lazy>
 		<OurTeam></OurTeam>
+		</v-lazy>
 		<Footer></Footer>
 	</div>
 </template>

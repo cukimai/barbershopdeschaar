@@ -43,7 +43,7 @@
 						{{adv.icon}}
 					</v-icon>
 				</v-avatar>
-				<v-card-title class="justify-center text-white text-body-1 text-md-h6" >
+				<v-card-title class="justify-center text-white text-body-1 text-md-h6 text-break" >
 					{{adv.text}}
 				</v-card-title>
 				<v-rating
