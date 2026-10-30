@@ -1,0 +1,53 @@
+name: Build en publiceer site-zip
+
+# Elke push naar main bouwt de statische site en publiceert `site.zip` als
+# GitHub-release "latest". In Plesk haal je die zip op via
+# File Manager → /site → Import file via URL → Archive → Extract (replace).
+# Zie README → Deployen.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build statische site
+        run: npm run build
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+
+      - name: Maak site.zip
+        run: |
+          rm -f out/CNAME out/.nojekyll
+          find out -name "*.txt" ! -name "robots.txt" -delete
+          (cd out && zip -qr ../site.zip .)
+          ls -la site.zip
+
+      - name: Publiceer als release "latest"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1 \
+            || gh release create latest --repo "$GITHUB_REPOSITORY" --title "Laatste build" \
+                 --notes "Automatisch gebouwd vanaf main. Download site.zip en pak uit in /site op de webhost."
+          gh release upload latest site.zip --repo "$GITHUB_REPOSITORY" --clobber
+          gh release edit latest --repo "$GITHUB_REPOSITORY" --notes "Automatisch gebouwd vanaf main op $(date -u +'%Y-%m-%d %H:%M UTC') (commit ${GITHUB_SHA::7}). Download site.zip en pak uit in /site op de webhost."
