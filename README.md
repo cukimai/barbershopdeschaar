@@ -17,7 +17,7 @@ npm run build      # statische site in ./out
 Alle teksten, openingstijden, diensten, prijzen en contactgegevens staan in **`src/data/site.ts`**.
 Pas daar iets aan en de hele site (inclusief SEO-metadata en Google-gestructureerde data) volgt.
 
-- **Prijzen:** `priceList` en `services` (overgenomen van de prijslijst in de zaak, foto via Google, oktober 2026).
+- **Prijzen:** `priceList` en `services` (doorgegeven door de eigenaar op 30 oktober 2026: knippen € 26, kinderen € 23, verder conform de prijslijst van 1 november 2025).
 - **Openingstijden:** `hours` (dag 0 = zondag). De "Nu geopend"-badge rekent live in tijdzone Europe/Amsterdam.
 - **Huisstijl:** kleuren in `src/app/globals.css` (`--color-brand` rood, `--color-brand-light` blauw uit de barber pole).
 
@@ -63,7 +63,6 @@ Video-ID's met omschrijving in `src/data/tiktok-videos.json`; thumbnail als `pub
 ## Nog te controleren door de eigenaar
 
 - **Openingstijden**: de oude website zei "maandag gesloten"; Google Bedrijfsprofiel en het bordje in de zaak zeggen "maandag 13:00–18:00". De site volgt Google (7 dagen open). Donderdag: Google 18:00, bordje 20:00 — site volgt Google. Pas `hours` aan als dat niet klopt.
-- **Prijzen**: van de prijslijst-foto op Google; controleer of die nog actueel is.
 
 ## Afbeeldingen
 

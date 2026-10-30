@@ -40,28 +40,28 @@ const services: Service[] = [
     title: "Knippen",
     description: "Knippen, föhnen en stylen. Van klassieke scheiding tot strakke skin fade, afgestemd op jouw stijl.",
     image: "/images/service-knippen.jpg",
-    price: "€ 23",
+    price: "€ 26",
   },
   {
     slug: "baard",
     title: "Baard bijwerken",
     description: "Strakke lijnen, de juiste lengte en een verzorgde afwerking. Of laat je baard volledig scheren.",
     image: "/images/service-baard.jpg",
-    price: "€ 16",
+    price: "€ 17",
   },
   {
     slug: "vip",
     title: "VIP-behandeling",
-    description: "Knippen, föhnen en stylen, neus en oren harsen én een gezichtsbehandeling. Alles in één keer goed.",
+    description: "Knippen, baard, föhnen en stylen, neus en oren harsen én een gezichtsbehandeling. Alles in één keer goed.",
     image: "/images/service-vip.jpg",
-    price: "€ 65",
+    price: "€ 70",
   },
   {
     slug: "kinderen",
     title: "Kinderen tot 10 jaar",
     description: "Knippen, föhnen en stylen voor de jongste klanten. Rustig, geduldig en net zo strak.",
     image: "/images/service-kinderen.jpg",
-    price: "€ 20",
+    price: "€ 23",
   },
 ];
 
@@ -69,23 +69,24 @@ const services: Service[] = [
 export type PriceItem = { title: string; detail?: string; price: string };
 
 const priceList: PriceItem[] = [
-  { title: "Knippen", detail: "Knippen, föhnen & stylen", price: "€ 23" },
-  { title: "Kinderen tot 10 jaar", detail: "Knippen, föhnen & stylen", price: "€ 20" },
+  { title: "Knippen", detail: "Knippen, föhnen & stylen", price: "€ 26" },
+  { title: "Kinderen tot 10 jaar", detail: "Knippen, föhnen & stylen", price: "€ 23" },
   {
     title: "VIP-behandeling",
     detail: "Knippen, föhnen, stylen, neus/oren harsen & gezichtsbehandeling",
-    price: "€ 65",
+    price: "€ 70",
   },
-  { title: "Baard scheren", price: "€ 16" },
-  { title: "Baard bijwerken", price: "€ 16" },
-  { title: "Contouren", price: "€ 9" },
+  { title: "Baard scheren", price: "€ 17" },
+  { title: "Baard bijwerken", price: "€ 17" },
+  { title: "Contouren", price: "€ 10" },
   { title: "Wassen", price: "€ 5" },
   { title: "Harsen neus & oren", price: "€ 6" },
-  { title: "Gezichtsbehandeling met stoom", detail: "Dubbele gezichtsreiniging met maskers", price: "€ 25" },
+  { title: "Haar enhancement", price: "€ 7" },
+  { title: "Gezichtsbehandeling met stoom", detail: "Dubbele gezichtsreiniging met masker", price: "€ 25" },
 ];
 
 const priceNotes = {
-  surcharge: "Met én zonder afspraak welkom. Wil je zeker zijn van je plek, bel of app dan even vooraf.",
+  surcharge: "Op zondag geldt een extra tarief van € 3.",
   products:
     "Wij knippen het haar graag zonder gel, wax of andere producten. Zitten er producten in het haar? Dan wassen we het eerst en rekenen we hiervoor extra kosten.",
 };
@@ -96,7 +97,7 @@ export const site = {
   url: "https://barbershopdeschaar.nl",
   tagline: "Dé herenkapper van 's-Heerenberg",
   description:
-    "Barbershop De Schaar is dé barbershop en herenkapper in 's-Heerenberg (Montferland). Knippen vanaf € 23, baard bijwerken en scheren. Met én zonder afspraak, 7 dagen per week open aan de Molenpoortstraat 15.",
+    "Barbershop De Schaar is dé barbershop en herenkapper in 's-Heerenberg (Montferland). Knippen vanaf € 26, baard bijwerken en scheren. Met én zonder afspraak, 7 dagen per week open aan de Molenpoortstraat 15.",
   keywords: [
     "barbershop 's-Heerenberg",
     "herenkapper 's-Heerenberg",
@@ -216,7 +217,7 @@ export const faq = [
   {
     question: "Wat kost knippen bij Barbershop De Schaar?",
     answer:
-      "Knippen inclusief föhnen en stylen kost € 23. Kinderen tot 10 jaar betalen € 20. Baard bijwerken of scheren is € 16 en de VIP-behandeling € 65.",
+      "Knippen inclusief föhnen en stylen kost € 26. Kinderen tot 10 jaar betalen € 23. Baard bijwerken of scheren is € 17 en de VIP-behandeling € 70. Op zondag geldt een extra tarief van € 3.",
   },
   {
     question: "Waar zit de barbershop en kan ik parkeren?",
@@ -231,7 +232,7 @@ export const faq = [
   {
     question: "Knippen jullie ook kinderen?",
     answer:
-      "Zeker. Kinderen tot 10 jaar knippen we voor € 20, rustig en met geduld. Ook voor een eerste knipbeurt ben je welkom.",
+      "Zeker. Kinderen tot 10 jaar knippen we voor € 23, rustig en met geduld. Ook voor een eerste knipbeurt ben je welkom.",
   },
   {
     question: "Moet mijn haar schoon zijn voor het knippen?",

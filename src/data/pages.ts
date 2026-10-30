@@ -30,7 +30,7 @@ export const landingPages: LandingPageContent[] = [
   {
     slug: "herenkapper-s-heerenberg",
     navLabel: "Herenkapper 's-Heerenberg",
-    metaTitle: "Herenkapper 's-Heerenberg | Knippen vanaf € 23",
+    metaTitle: "Herenkapper 's-Heerenberg | Knippen vanaf € 26",
     metaDescription:
       "Op zoek naar een herenkapper in 's-Heerenberg? Barbershop De Schaar knipt heren en jongens met oog voor detail: van klassiek tot skin fade. Zonder afspraak welkom, 7 dagen per week.",
     eyebrow: "Herenkapper in 's-Heerenberg",
@@ -53,9 +53,9 @@ export const landingPages: LandingPageContent[] = [
           "We zitten midden in het centrum van 's-Heerenberg, aan de Molenpoortstraat 15. Gratis parkeren in de buurt, de fiets voor de deur. We zijn zeven dagen per week open, op vrijdag zelfs tot 20:00 uur.",
         ],
         bullets: [
-          "Knippen, föhnen & stylen: € 23",
-          "Kinderen tot 10 jaar: € 20",
-          "Contouren bijwerken tussendoor: € 9",
+          "Knippen, föhnen & stylen: € 26",
+          "Kinderen tot 10 jaar: € 23",
+          "Contouren bijwerken tussendoor: € 10",
           "Met én zonder afspraak welkom",
         ],
       },
@@ -84,7 +84,7 @@ export const landingPages: LandingPageContent[] = [
     navLabel: "Barbier & baard",
     metaTitle: "Barbier 's-Heerenberg | Baard bijwerken & scheren",
     metaDescription:
-      "Barbier in 's-Heerenberg voor baard bijwerken en scheren (€ 16), contouren en gezichtsbehandeling met stoom. Strakke lijnen en eerlijk advies bij Barbershop De Schaar.",
+      "Barbier in 's-Heerenberg voor baard bijwerken en scheren (€ 17), contouren en gezichtsbehandeling met stoom. Strakke lijnen en eerlijk advies bij Barbershop De Schaar.",
     eyebrow: "Barbier in 's-Heerenberg",
     h1: "Baard bijwerken en scheren zoals een barbier dat hoort te doen.",
     intro:
@@ -97,19 +97,19 @@ export const landingPages: LandingPageContent[] = [
         paragraphs: [
           "We brengen je baard op de juiste lengte, maken de contouren strak langs wangen en hals en werken de overgang naar je haar netjes af. Je krijgt advies over hoe je de vorm thuis bijhoudt en welke olie of balsem bij jouw baard past.",
         ],
-        bullets: ["Baard bijwerken: € 16", "Baard scheren: € 16", "Contouren: € 9", "Harsen neus & oren: € 6"],
+        bullets: ["Baard bijwerken: € 17", "Baard scheren: € 17", "Contouren: € 10", "Harsen neus & oren: € 6"],
       },
       {
         heading: "Gezichtsbehandeling met stoom",
         paragraphs: [
           "Een dubbele gezichtsreiniging met maskers en stoom: poriën open, huid schoon, baard zacht. Ideaal als afsluiter van een knipbeurt of als moment voor jezelf. Dertig minuten rust, een frisse huid als resultaat.",
         ],
-        bullets: ["Gezichtsbehandeling met stoom: € 25", "VIP-behandeling (alles in één): € 65"],
+        bullets: ["Gezichtsbehandeling met stoom: € 25", "VIP-behandeling (alles in één): € 70"],
       },
       {
         heading: "Haar én baard in één bezoek",
         paragraphs: [
-          "Combineer je knipbeurt met een baardbehandeling, dan zorgen we dat beide in balans zijn. Kies voor de VIP-behandeling (€ 65) en je krijgt knippen, föhnen, stylen, neus en oren harsen én een gezichtsbehandeling in één keer.",
+          "Combineer je knipbeurt met een baardbehandeling, dan zorgen we dat beide in balans zijn. Kies voor de VIP-behandeling (€ 70) en je krijgt knippen, baard, föhnen, stylen, neus en oren harsen én een gezichtsbehandeling in één keer.",
         ],
       },
     ],
@@ -155,7 +155,7 @@ export const landingPages: LandingPageContent[] = [
       {
         heading: "Ook goed om te weten",
         paragraphs: [
-          "We knippen het liefst haar zonder gel of wax; zit er product in, dan wassen we het eerst (€ 5). Pinnen en contant betalen kan allebei.",
+          "Op zondag geldt een extra tarief van € 3. We knippen het liefst haar zonder gel of wax; zit er product in, dan wassen we het eerst (€ 5). Pinnen en contant betalen kan allebei.",
         ],
       },
     ],
