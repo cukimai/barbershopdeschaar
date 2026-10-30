@@ -73,7 +73,7 @@ const priceList: PriceItem[] = [
   { title: "Kinderen tot 10 jaar", detail: "Knippen, föhnen & stylen", price: "€ 23" },
   {
     title: "VIP-behandeling",
-    detail: "Knippen, föhnen, stylen, neus/oren harsen & gezichtsbehandeling",
+    detail: "Knippen, baard, föhnen, stylen, neus/oren harsen & gezichtsbehandeling",
     price: "€ 70",
   },
   { title: "Baard scheren", price: "€ 17" },
