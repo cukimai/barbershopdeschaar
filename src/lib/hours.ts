@@ -1,4 +1,6 @@
-import { dayNamesShort, site, type OpeningHour } from "@/data/site";
+import type { OpeningHour } from "@/data/site";
+
+const dayNamesShort = ["zo", "ma", "di", "wo", "do", "vr", "za"] as const;
 
 const TIME_ZONE = "Europe/Amsterdam";
 
@@ -28,8 +30,8 @@ export function getLocalNow(date: Date = new Date()): LocalNow {
   };
 }
 
-export function hoursForDay(day: number): OpeningHour | undefined {
-  return site.hours.find((h) => h.day === day);
+function hoursForDay(hours: readonly OpeningHour[], day: number): OpeningHour | undefined {
+  return hours.find((h) => h.day === day);
 }
 
 export type OpenStatus =
@@ -37,9 +39,9 @@ export type OpenStatus =
   | { open: false; opensAt: string; opensDayLabel: string };
 
 /** Bepaalt of de zaak nu open is en wanneer het volgende moment van openen/sluiten is. */
-export function getOpenStatus(date: Date = new Date()): OpenStatus {
+export function getOpenStatus(hours: readonly OpeningHour[], date: Date = new Date()): OpenStatus {
   const now = getLocalNow(date);
-  const today = hoursForDay(now.day);
+  const today = hoursForDay(hours, now.day);
 
   if (today && now.minutes >= toMinutes(today.opens) && now.minutes < toMinutes(today.closes)) {
     return { open: true, closesAt: today.closes };
@@ -51,11 +53,11 @@ export function getOpenStatus(date: Date = new Date()): OpenStatus {
 
   for (let offset = 1; offset <= 7; offset++) {
     const day = (now.day + offset) % 7;
-    const hours = hoursForDay(day);
-    if (hours) {
+    const next = hoursForDay(hours, day);
+    if (next) {
       return {
         open: false,
-        opensAt: hours.opens,
+        opensAt: next.opens,
         opensDayLabel: offset === 1 ? "morgen" : dayNamesShort[day],
       };
     }
@@ -65,9 +67,9 @@ export function getOpenStatus(date: Date = new Date()): OpenStatus {
 }
 
 /** Openingstijden in schema.org-formaat voor de gestructureerde data. */
-export function openingHoursSpecification() {
+export function openingHoursSpecification(hours: readonly OpeningHour[]) {
   const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  return site.hours.map((h) => ({
+  return hours.map((h) => ({
     "@type": "OpeningHoursSpecification",
     dayOfWeek: dayOfWeek[h.day],
     opens: h.opens,

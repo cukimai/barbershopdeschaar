@@ -10,7 +10,7 @@ export function SectionHeading({ eyebrow, title, text, tone = "light", align = "
   const dark = tone === "dark";
   return (
     <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
-      <p className="text-xs font-semibold tracking-[0.18em] text-brand uppercase">{eyebrow}</p>
+      <p className={`text-xs font-semibold tracking-[0.18em] uppercase ${dark ? "text-brand-light" : "text-brand"}`}>{eyebrow}</p>
       <h2
         className={`mt-3 text-3xl font-bold tracking-[-0.025em] text-balance sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1] ${
           dark ? "text-white" : "text-ink"

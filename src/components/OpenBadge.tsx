@@ -1,9 +1,11 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useCallback, useSyncExternalStore } from "react";
+import type { OpeningHour } from "@/data/site";
 import { getOpenStatus, type OpenStatus } from "@/lib/hours";
 
 type Props = {
+  hours: readonly OpeningHour[];
   /** "dark" voor op donkere achtergrond (hero), "light" voor op wit */
   tone?: "dark" | "light";
 };
@@ -11,10 +13,6 @@ type Props = {
 function subscribe(onChange: () => void) {
   const timer = window.setInterval(onChange, 60_000);
   return () => window.clearInterval(timer);
-}
-
-function getSnapshot(): string {
-  return JSON.stringify(getOpenStatus());
 }
 
 function getServerSnapshot(): null {
@@ -25,7 +23,8 @@ function getServerSnapshot(): null {
  * Toont live of de zaak nu open is. Op de server onbekend (geen "nu"), in de
  * browser direct na hydratatie berekend — zonder hydratiefouten.
  */
-export function OpenBadge({ tone = "dark" }: Props) {
+export function OpenBadge({ hours, tone = "dark" }: Props) {
+  const getSnapshot = useCallback(() => JSON.stringify(getOpenStatus(hours)), [hours]);
   const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const status: OpenStatus | null = snapshot ? (JSON.parse(snapshot) as OpenStatus) : null;
 

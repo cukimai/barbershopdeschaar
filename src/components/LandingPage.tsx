@@ -1,10 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Faq } from "@/components/Faq";
 import { FloatingContact } from "@/components/FloatingContact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { OpenBadge } from "@/components/OpenBadge";
+import { Picture } from "@/components/Picture";
 import { ArrowRightIcon, PhoneIcon, WhatsAppIcon } from "@/components/icons";
 import type { LandingPageContent } from "@/data/pages";
 import { serviceArea, site } from "@/data/site";
@@ -23,6 +22,23 @@ export function LandingPage({ page }: Props) {
     ],
   };
 
+  const service = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${site.url}/${page.slug}/#service`,
+    name: page.navLabel,
+    description: page.metaDescription,
+    url: `${site.url}/${page.slug}/`,
+    image: `${site.url}${page.image}`,
+    serviceType: page.eyebrow,
+    provider: { "@id": `${site.url}/#business` },
+    areaServed: serviceArea.map((place) => ({ "@type": "City", name: place.name })),
+    availableChannel: {
+      "@type": "ServiceChannel",
+      servicePhone: { "@type": "ContactPoint", telephone: site.phone, contactType: "reservations" },
+    },
+  };
+
   const faqSchema = page.faq
     ? {
         "@context": "https://schema.org",
@@ -38,6 +54,7 @@ export function LandingPage({ page }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }} />
       {faqSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
@@ -56,9 +73,9 @@ export function LandingPage({ page }: Props) {
               <nav aria-label="Kruimelpad" className="text-sm text-muted">
                 <ol className="flex items-center gap-2">
                   <li>
-                    <Link href="/" className="transition-colors hover:text-ink">
+                    <a href="/" className="transition-colors hover:text-ink">
                       Home
-                    </Link>
+                    </a>
                   </li>
                   <li aria-hidden="true">/</li>
                   <li aria-current="page" className="text-ink">
@@ -74,7 +91,7 @@ export function LandingPage({ page }: Props) {
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">{page.intro}</p>
 
               <div className="mt-8">
-                <OpenBadge tone="light" />
+                <OpenBadge hours={site.hours} tone="light" />
               </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -98,7 +115,7 @@ export function LandingPage({ page }: Props) {
             </div>
 
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-ink lg:aspect-[4/5]">
-              <Image
+              <Picture
                 src={page.image}
                 alt={page.imageAlt}
                 fill
@@ -176,13 +193,13 @@ export function LandingPage({ page }: Props) {
                     <PhoneIcon className="size-4" />
                     {site.phoneDisplay}
                   </a>
-                  <Link
+                  <a
                     href="/#diensten"
                     className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-white/80 transition-colors hover:text-white"
                   >
                     Bekijk alle diensten en prijzen
                     <ArrowRightIcon className="size-4" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

@@ -18,7 +18,12 @@ export function JsonLd() {
       `${site.url}/images/gevel.jpg`,
       `${site.url}/images/interieur.jpg`,
     ],
-    logo: `${site.url}/icon-512.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${site.url}/images/logo-black.png`,
+      width: 664,
+      height: 282,
+    },
     telephone: site.phone,
     priceRange: "€€",
     currenciesAccepted: "EUR",
@@ -38,7 +43,7 @@ export function JsonLd() {
       longitude: site.geo.lng,
     },
     hasMap: site.mapsUrl,
-    openingHoursSpecification: openingHoursSpecification(),
+    openingHoursSpecification: openingHoursSpecification(site.hours),
     sameAs: [site.instagram.url, site.facebookUrl],
     slogan: site.slogan,
     areaServed: [
@@ -52,6 +57,9 @@ export function JsonLd() {
       name: "Diensten",
       itemListElement: site.services.map((service) => ({
         "@type": "Offer",
+        ...(service.price
+          ? { price: service.price.replace(/[^\d,.]/g, "").replace(",", "."), priceCurrency: "EUR" }
+          : {}),
         itemOffered: {
           "@type": "Service",
           name: service.title,

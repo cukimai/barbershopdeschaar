@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { FloatingContact } from "@/components/FloatingContact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -23,9 +22,9 @@ export default function PrivacyPage() {
           <nav aria-label="Kruimelpad" className="text-sm text-muted">
             <ol className="flex items-center gap-2">
               <li>
-                <Link href="/" className="transition-colors hover:text-ink">
+                <a href="/" className="transition-colors hover:text-ink">
                   Home
-                </Link>
+                </a>
               </li>
               <li aria-hidden="true">/</li>
               <li aria-current="page" className="text-ink">

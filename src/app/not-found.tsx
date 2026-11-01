@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { FloatingContact } from "@/components/FloatingContact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -26,13 +25,13 @@ export default function NotFound() {
             homepage, en voor een afspraak bel of app je ons gewoon.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <Link
+            <a
               href="/"
               className="inline-flex items-center justify-center gap-2.5 rounded-full bg-ink px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-ink-soft"
             >
               Naar de homepage
               <ArrowRightIcon className="size-5" />
-            </Link>
+            </a>
             <a
               href={`tel:${site.phone}`}
               className="inline-flex items-center justify-center gap-2.5 rounded-full bg-brand px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-brand-dark"

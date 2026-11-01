@@ -1,3 +1,4 @@
+import { Picture } from "@/components/Picture";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TikTokGrid } from "@/components/TikTokGrid";
 import { ArrowRightIcon, TikTokIcon } from "@/components/icons";
@@ -31,7 +32,21 @@ export async function TikTokSection() {
       </div>
 
       <div className="pt-12 pb-24 sm:pb-32">
-        <TikTokGrid videos={videos} />
+        <TikTokGrid
+          videos={videos.map((video) => ({
+            id: video.id,
+            caption: video.caption,
+            thumbnail: (
+              <Picture
+                src={video.image}
+                alt=""
+                fill
+                sizes="270px"
+                className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.04]"
+              />
+            ),
+          }))}
+        />
       </div>
     </section>
   );

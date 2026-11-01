@@ -1,0 +1,1014 @@
+{
+  "/images/gevel-breed.jpg": {
+    "width": 1600,
+    "height": 900,
+    "avif": [
+      {
+        "src": "/images/gevel-breed-384.avif",
+        "width": 384,
+        "height": 216
+      },
+      {
+        "src": "/images/gevel-breed-640.avif",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "src": "/images/gevel-breed-828.avif",
+        "width": 828,
+        "height": 466
+      },
+      {
+        "src": "/images/gevel-breed-1080.avif",
+        "width": 1080,
+        "height": 608
+      },
+      {
+        "src": "/images/gevel-breed-1280.avif",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "/images/gevel-breed-1600.avif",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/gevel-breed-384.webp",
+        "width": 384,
+        "height": 216
+      },
+      {
+        "src": "/images/gevel-breed-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "src": "/images/gevel-breed-828.webp",
+        "width": 828,
+        "height": 466
+      },
+      {
+        "src": "/images/gevel-breed-1080.webp",
+        "width": 1080,
+        "height": 608
+      },
+      {
+        "src": "/images/gevel-breed-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "/images/gevel-breed-1600.webp",
+        "width": 1600,
+        "height": 900
+      }
+    ]
+  },
+  "/images/gevel.jpg": {
+    "width": 1200,
+    "height": 900,
+    "avif": [
+      {
+        "src": "/images/gevel-384.avif",
+        "width": 384,
+        "height": 288
+      },
+      {
+        "src": "/images/gevel-640.avif",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/images/gevel-828.avif",
+        "width": 828,
+        "height": 621
+      },
+      {
+        "src": "/images/gevel-1080.avif",
+        "width": 1080,
+        "height": 810
+      },
+      {
+        "src": "/images/gevel-1200.avif",
+        "width": 1200,
+        "height": 900
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/gevel-384.webp",
+        "width": 384,
+        "height": 288
+      },
+      {
+        "src": "/images/gevel-640.webp",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/images/gevel-828.webp",
+        "width": 828,
+        "height": 621
+      },
+      {
+        "src": "/images/gevel-1080.webp",
+        "width": 1080,
+        "height": 810
+      },
+      {
+        "src": "/images/gevel-1200.webp",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  "/images/hero-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "avif": [
+      {
+        "src": "/images/hero-mobile-480.avif",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "/images/hero-mobile-640.avif",
+        "width": 640,
+        "height": 853
+      },
+      {
+        "src": "/images/hero-mobile-828.avif",
+        "width": 828,
+        "height": 1104
+      },
+      {
+        "src": "/images/hero-mobile-900.avif",
+        "width": 900,
+        "height": 1200
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/hero-mobile-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "/images/hero-mobile-640.webp",
+        "width": 640,
+        "height": 853
+      },
+      {
+        "src": "/images/hero-mobile-828.webp",
+        "width": 828,
+        "height": 1104
+      },
+      {
+        "src": "/images/hero-mobile-900.webp",
+        "width": 900,
+        "height": 1200
+      }
+    ]
+  },
+  "/images/hero.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "avif": [
+      {
+        "src": "/images/hero-828.avif",
+        "width": 828,
+        "height": 466
+      },
+      {
+        "src": "/images/hero-1080.avif",
+        "width": 1080,
+        "height": 608
+      },
+      {
+        "src": "/images/hero-1280.avif",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "/images/hero-1600.avif",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "src": "/images/hero-1920.avif",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/hero-828.webp",
+        "width": 828,
+        "height": 466
+      },
+      {
+        "src": "/images/hero-1080.webp",
+        "width": 1080,
+        "height": 608
+      },
+      {
+        "src": "/images/hero-1280.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "src": "/images/hero-1600.webp",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "src": "/images/hero-1920.webp",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "/images/interieur.jpg": {
+    "width": 853,
+    "height": 640,
+    "avif": [
+      {
+        "src": "/images/interieur-384.avif",
+        "width": 384,
+        "height": 288
+      },
+      {
+        "src": "/images/interieur-640.avif",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/images/interieur-828.avif",
+        "width": 828,
+        "height": 621
+      },
+      {
+        "src": "/images/interieur-853.avif",
+        "width": 853,
+        "height": 640
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/interieur-384.webp",
+        "width": 384,
+        "height": 288
+      },
+      {
+        "src": "/images/interieur-640.webp",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "/images/interieur-828.webp",
+        "width": 828,
+        "height": 621
+      },
+      {
+        "src": "/images/interieur-853.webp",
+        "width": 853,
+        "height": 640
+      }
+    ]
+  },
+  "/images/logo-black.png": {
+    "width": 800,
+    "height": 302,
+    "avif": [
+      {
+        "src": "/images/logo-black-192.avif",
+        "width": 192,
+        "height": 72
+      },
+      {
+        "src": "/images/logo-black-384.avif",
+        "width": 384,
+        "height": 145
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/logo-black-192.webp",
+        "width": 192,
+        "height": 72
+      },
+      {
+        "src": "/images/logo-black-384.webp",
+        "width": 384,
+        "height": 145
+      }
+    ]
+  },
+  "/images/logo-white.png": {
+    "width": 800,
+    "height": 302,
+    "avif": [
+      {
+        "src": "/images/logo-white-192.avif",
+        "width": 192,
+        "height": 72
+      },
+      {
+        "src": "/images/logo-white-384.avif",
+        "width": 384,
+        "height": 145
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/logo-white-192.webp",
+        "width": 192,
+        "height": 72
+      },
+      {
+        "src": "/images/logo-white-384.webp",
+        "width": 384,
+        "height": 145
+      }
+    ]
+  },
+  "/images/service-baard.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/service-baard-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-baard-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-baard-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/service-baard-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-baard-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-baard-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/images/service-kinderen.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/service-kinderen-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-kinderen-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-kinderen-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/service-kinderen-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-kinderen-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-kinderen-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/images/service-knippen.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/service-knippen-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-knippen-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-knippen-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/service-knippen-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-knippen-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-knippen-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/images/service-vip.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/service-vip-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-vip-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-vip-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/service-vip-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/service-vip-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/service-vip-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/images/werk-baard.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/werk-baard-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/werk-baard-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/werk-baard-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/werk-baard-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/werk-baard-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/werk-baard-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/images/werk-fade.jpg": {
+    "width": 800,
+    "height": 1000,
+    "avif": [
+      {
+        "src": "/images/werk-fade-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/werk-fade-640.avif",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/werk-fade-800.avif",
+        "width": 800,
+        "height": 1000
+      }
+    ],
+    "webp": [
+      {
+        "src": "/images/werk-fade-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/images/werk-fade-640.webp",
+        "width": 640,
+        "height": 800
+      },
+      {
+        "src": "/images/werk-fade-800.webp",
+        "width": 800,
+        "height": 1000
+      }
+    ]
+  },
+  "/instagram/DSclf0igoMV.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DSclf0igoMV-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSclf0igoMV-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DSclf0igoMV-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSclf0igoMV-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DShsWbTAiPZ.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DShsWbTAiPZ-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DShsWbTAiPZ-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DShsWbTAiPZ-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DShsWbTAiPZ-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DSpcbVZghBY.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DSpcbVZghBY-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSpcbVZghBY-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DSpcbVZghBY-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSpcbVZghBY-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DSUwiNZAv99.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DSUwiNZAv99-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSUwiNZAv99-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DSUwiNZAv99-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DSUwiNZAv99-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DVdoqP_guz6.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DVdoqP_guz6-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DVdoqP_guz6-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DVdoqP_guz6-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DVdoqP_guz6-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DWRUNjGgumY.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DWRUNjGgumY-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DWRUNjGgumY-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DWRUNjGgumY-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DWRUNjGgumY-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DYcS68FiyGZ.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DYcS68FiyGZ-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DYcS68FiyGZ-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DYcS68FiyGZ-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DYcS68FiyGZ-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DYW04BMC-MD.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DYW04BMC-MD-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DYW04BMC-MD-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DYW04BMC-MD-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DYW04BMC-MD-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DZC_BLSC4OK.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DZC_BLSC4OK-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DZC_BLSC4OK-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DZC_BLSC4OK-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DZC_BLSC4OK-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/instagram/DZDs6i6COSE.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/instagram/DZDs6i6COSE-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DZDs6i6COSE-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/instagram/DZDs6i6COSE-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/instagram/DZDs6i6COSE-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7575875958083800352.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7575875958083800352-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7575875958083800352-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7575875958083800352-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7575875958083800352-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7578861898171518241.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7578861898171518241-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7578861898171518241-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7578861898171518241-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7578861898171518241-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7584431006875241761.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7584431006875241761-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7584431006875241761-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7584431006875241761-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7584431006875241761-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7586296776064355617.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7586296776064355617-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7586296776064355617-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7586296776064355617-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7586296776064355617-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7587413934450167072.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7587413934450167072-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7587413934450167072-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7587413934450167072-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7587413934450167072-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  },
+  "/tiktok/7640857698585660704.jpg": {
+    "width": 640,
+    "height": 800,
+    "avif": [
+      {
+        "src": "/tiktok/7640857698585660704-384.avif",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7640857698585660704-640.avif",
+        "width": 640,
+        "height": 800
+      }
+    ],
+    "webp": [
+      {
+        "src": "/tiktok/7640857698585660704-384.webp",
+        "width": 384,
+        "height": 480
+      },
+      {
+        "src": "/tiktok/7640857698585660704-640.webp",
+        "width": 640,
+        "height": 800
+      }
+    ]
+  }
+}

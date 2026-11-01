@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Picture } from "@/components/Picture";
 import { SectionHeading } from "@/components/SectionHeading";
 import { site } from "@/data/site";
 
@@ -7,7 +7,7 @@ const mosaic = [
     src: "/images/interieur.jpg",
     alt: "Het interieur van Barbershop De Schaar met ronde spiegels en barbierstoelen",
     className: "col-span-2 aspect-[4/3]",
-    sizes: "(min-width: 1024px) 55vw, 100vw",
+    sizes: "(min-width: 1024px) 40vw, 100vw",
   },
   {
     src: "/images/werk-fade.jpg",
@@ -39,13 +39,7 @@ export function About() {
               key={photo.src}
               className={`relative overflow-hidden rounded-3xl bg-paper-soft ${photo.className}`}
             >
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                sizes={photo.sizes}
-                className="object-cover"
-              />
+              <Picture src={photo.src} alt={photo.alt} fill sizes={photo.sizes} className="object-cover" />
             </div>
           ))}
         </div>

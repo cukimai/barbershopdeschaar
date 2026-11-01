@@ -1,4 +1,5 @@
-import Image from "next/image";
+import { MapEmbed } from "@/components/MapEmbed";
+import { Picture } from "@/components/Picture";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ArrowRightIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/icons";
 import { site } from "@/data/site";
@@ -24,7 +25,7 @@ export function Contact() {
                   <PhoneIcon className="size-5" />
                 </span>
                 <span>
-                  <span className="block text-sm text-white/80">Bel ons</span>
+                  <span className="block text-sm text-white">Bel ons</span>
                   <span className="block text-xl font-semibold tabular-nums">{site.phoneDisplay}</span>
                 </span>
               </span>
@@ -71,7 +72,7 @@ export function Contact() {
             </a>
 
             <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-paper-soft">
-              <Image
+              <Picture
                 src="/images/gevel-breed.jpg"
                 alt="De gevel van Barbershop De Schaar aan de Molenpoortstraat in 's-Heerenberg"
                 fill
@@ -85,13 +86,13 @@ export function Contact() {
           </div>
 
           <div className="relative min-h-[420px] overflow-hidden rounded-3xl border border-line bg-paper-soft lg:min-h-0">
-            <iframe
-              title={`Locatie van ${site.name} op Google Maps`}
-              src={site.mapsEmbedUrl}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-              className="absolute inset-0 h-full w-full border-0 grayscale-[0.2] contrast-[1.02]"
+            <MapEmbed
+              name={site.name}
+              street={site.address.street}
+              postalCode={site.address.postalCode}
+              city={site.address.city}
+              mapsUrl={site.mapsUrl}
+              mapsEmbedUrl={site.mapsEmbedUrl}
             />
           </div>
         </div>

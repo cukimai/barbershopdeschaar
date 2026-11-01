@@ -1,12 +1,16 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { PlayIcon, TikTokIcon } from "@/components/icons";
 import type { TikTokVideo } from "@/lib/tiktok";
 
+export type TikTokCard = Pick<TikTokVideo, "id" | "caption"> & {
+  /** Server-gerenderde thumbnail (Picture) */
+  thumbnail: ReactNode;
+};
+
 type Props = {
-  videos: TikTokVideo[];
+  videos: TikTokCard[];
 };
 
 /**
@@ -46,14 +50,7 @@ export function TikTokGrid({ videos }: Props) {
                 className="group absolute inset-0 block text-left"
                 aria-label={`Speel TikTok-video af: ${video.caption || "video"}`}
               >
-                <Image
-                  src={video.image}
-                  alt=""
-                  fill
-                  sizes="270px"
-                  loading="lazy"
-                  className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.04]"
-                />
+                {video.thumbnail}
                 <span
                   className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-ink/20"
                   aria-hidden="true"

@@ -1,17 +1,52 @@
+import { preload } from "react-dom";
 import { OpenBadge } from "@/components/OpenBadge";
+import { getImage, toSrcSet } from "@/components/Picture";
 import { PhoneIcon, StarIcon, WhatsAppIcon } from "@/components/icons";
 import { site } from "@/data/site";
 
+const MOBILE_QUERY = "(max-width: 767px)";
+const DESKTOP_QUERY = "(min-width: 768px)";
+
 export function Hero() {
+  const mobile = getImage("/images/hero-mobile.jpg");
+  const desktop = getImage("/images/hero.jpg");
+
+  // De hero is het grootste element in beeld (LCP): preload precies de variant die de browser kiest.
+  if (mobile) {
+    preload(mobile.avif[mobile.avif.length - 1].src, {
+      as: "image",
+      type: "image/avif",
+      media: MOBILE_QUERY,
+      imageSrcSet: toSrcSet(mobile.avif),
+      imageSizes: "100vw",
+      fetchPriority: "high",
+    });
+  }
+  if (desktop) {
+    preload(desktop.avif[desktop.avif.length - 1].src, {
+      as: "image",
+      type: "image/avif",
+      media: DESKTOP_QUERY,
+      imageSrcSet: toSrcSet(desktop.avif),
+      imageSizes: "100vw",
+      fetchPriority: "high",
+    });
+  }
+
   return (
     <section className="relative isolate flex min-h-[calc(100svh-4.5rem)] items-end overflow-hidden bg-ink text-white">
       <picture className="absolute inset-0 -z-20">
-        <source media="(max-width: 767px)" srcSet="/images/hero-mobile.jpg" />
+        {mobile && <source media={MOBILE_QUERY} type="image/avif" srcSet={toSrcSet(mobile.avif)} sizes="100vw" />}
+        {mobile && <source media={MOBILE_QUERY} type="image/webp" srcSet={toSrcSet(mobile.webp)} sizes="100vw" />}
+        <source media={MOBILE_QUERY} srcSet="/images/hero-mobile.jpg" />
+        {desktop && <source type="image/avif" srcSet={toSrcSet(desktop.avif)} sizes="100vw" />}
+        {desktop && <source type="image/webp" srcSet={toSrcSet(desktop.webp)} sizes="100vw" />}
         <img
           src="/images/hero.jpg"
           alt="De gevel van Barbershop De Schaar aan de Molenpoortstraat in 's-Heerenberg, met barber pole"
           width={1080}
           height={607}
+          sizes="100vw"
           fetchPriority="high"
           decoding="async"
           className="h-full w-full object-cover object-center"
@@ -25,7 +60,7 @@ export function Hero() {
       <div className="mx-auto w-full max-w-6xl px-5 pt-32 pb-16 sm:px-8 sm:pb-24">
         <div className="max-w-2xl">
           <div className="reveal">
-            <OpenBadge />
+            <OpenBadge hours={site.hours} />
           </div>
 
           <h1 className="reveal reveal-delay-1 mt-6 text-5xl font-bold tracking-[-0.03em] text-balance sm:text-6xl lg:text-7xl">

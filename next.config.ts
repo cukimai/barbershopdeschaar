@@ -4,8 +4,9 @@ const nextConfig: NextConfig = {
   // Volledig statische site: deploybaar op elke webserver (Apache, Nginx, Netlify, Vercel, ...).
   output: "export",
   trailingSlash: true,
+  // Afbeeldingen worden vooraf geoptimaliseerd (scripts/optimize-images.mjs) en via <picture> geserveerd;
+  // next/image wordt niet gebruikt.
   images: {
-    // Bij een statische export is er geen image-server; afbeeldingen zijn vooraf op maat gemaakt.
     unoptimized: true,
   },
   turbopack: {

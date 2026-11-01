@@ -102,19 +102,3 @@ body {
   display: none;
 }
 
-/* Embla carousel basis */
-.embla {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  touch-action: pan-y pinch-zoom;
-  margin-left: calc(var(--slide-gap) * -1);
-}
-
-.embla__slide {
-  flex: 0 0 var(--slide-size);
-  min-width: 0;
-  padding-left: var(--slide-gap);
-}

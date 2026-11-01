@@ -1,6 +1,7 @@
-import Image from "next/image";
+import { Picture } from "@/components/Picture";
 import { SectionHeading } from "@/components/SectionHeading";
-import { PhoneIcon } from "@/components/icons";
+import { ArrowRightIcon, PhoneIcon } from "@/components/icons";
+import { landingPages } from "@/data/pages";
 import { site } from "@/data/site";
 
 export function Services() {
@@ -14,18 +15,14 @@ export function Services() {
         />
 
         <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {site.services.map((service, index) => (
-            <li
-              key={service.slug}
-              className="group relative overflow-hidden rounded-3xl bg-ink text-white"
-            >
+          {site.services.map((service) => (
+            <li key={service.slug} className="group relative overflow-hidden rounded-3xl bg-ink text-white">
               <div className="relative aspect-[4/5]">
-                <Image
+                <Picture
                   src={service.image}
                   alt={`${service.title} bij ${site.name}`}
                   fill
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                  loading={index < 2 ? "eager" : "lazy"}
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 88vw"
                   className="object-cover opacity-80 transition-[transform,opacity] duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] group-hover:scale-[1.04] group-hover:opacity-90"
                 />
                 <div
@@ -56,22 +53,30 @@ export function Services() {
                 Incl. btw
               </span>
             </div>
-            <dl>
-              {site.priceList.map((item) => (
-                <div
-                  key={item.title}
-                  className="flex items-baseline justify-between gap-6 border-b border-line px-6 py-4 last:border-b-0 sm:px-8"
-                >
-                  <div>
-                    <dt className="text-[15px] font-medium text-ink">{item.title}</dt>
-                    {item.detail && <dd className="mt-0.5 text-sm text-muted">{item.detail}</dd>}
-                  </div>
-                  <dd className="shrink-0 text-[15px] font-semibold text-ink tabular-nums">
-                    {item.price}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+            <table className="w-full border-collapse text-left">
+              <caption className="sr-only">Prijslijst van {site.name}</caption>
+              <thead className="sr-only">
+                <tr>
+                  <th scope="col">Behandeling</th>
+                  <th scope="col">Prijs</th>
+                </tr>
+              </thead>
+              <tbody>
+                {site.priceList.map((item) => (
+                  <tr key={item.title} className="border-b border-line last:border-b-0">
+                    <th scope="row" className="px-6 py-4 align-baseline text-[15px] font-medium text-ink sm:px-8">
+                      {item.title}
+                      {item.detail && (
+                        <span className="mt-0.5 block text-sm font-normal text-muted">{item.detail}</span>
+                      )}
+                    </th>
+                    <td className="w-px px-6 py-4 text-right align-baseline text-[15px] font-semibold whitespace-nowrap text-ink tabular-nums sm:px-8">
+                      {item.price}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
 
           <div className="flex flex-col gap-5">
@@ -108,6 +113,20 @@ export function Services() {
             </div>
           </div>
         </div>
+
+        <nav aria-label="Meer over onze diensten" className="mt-10 flex flex-wrap items-center gap-x-2 gap-y-3">
+          <span className="mr-2 text-sm font-medium text-muted">Meer lezen:</span>
+          {landingPages.map((page) => (
+            <a
+              key={page.slug}
+              href={`/${page.slug}/`}
+              className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 text-sm font-medium text-ink transition-[border-color,background-color] duration-150 hover:border-ink/25 hover:bg-paper-soft"
+            >
+              {page.navLabel}
+              <ArrowRightIcon className="size-3.5 text-muted" />
+            </a>
+          ))}
+        </nav>
       </div>
     </section>
   );

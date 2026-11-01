@@ -50,7 +50,7 @@ Video-ID's met omschrijving in `src/data/tiktok-videos.json`; thumbnail als `pub
 2. Plesk → *Files* → map `site` → **+** → *Import file via URL* → plak bovenstaande URL.
 3. Vink `site.zip` aan → *Archive* → *Extract Files* → **Replace existing files** aan → OK. Verwijder daarna de zip.
 
-`public/.htaccess` regelt op Apache de 404-pagina, caching en compressie.
+`public/.htaccess` regelt op Apache de 404-pagina, caching, compressie (brotli/gzip), de MIME-types voor AVIF/WebP en de beveiligingsheaders (HSTS, X-Frame-Options, Permissions-Policy, COOP).
 
 ## Bovenaan in Google in 's-Heerenberg
 
