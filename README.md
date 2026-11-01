@@ -39,6 +39,17 @@ De carrousel toont standaard de meegeleverde posts uit `src/data/instagram-fallb
 
 Video-ID's met omschrijving in `src/data/tiktok-videos.json`; thumbnail als `public/tiktok/<id>.jpg` (staand, 4:5). Zonder thumbnail wordt de video overgeslagen. De speler laadt pas na een klik.
 
+## Prestaties (Lighthouse 100/100/100/100)
+
+De site scoort lokaal 100 op Prestaties, Toegankelijkheid, Best practices en SEO (mobiel én desktop). Zo blijft dat zo:
+
+- **Afbeeldingen** worden vooraf omgezet naar AVIF + WebP in meerdere breedtes door `scripts/optimize-images.mjs` (draait automatisch bij `npm run dev` en `npm run build`, los via `npm run images`). Het manifest `src/data/images.generated.json` en de varianten (`*-640.avif` enz.) staan in git. Nieuwe foto toevoegen = JPG/PNG in `public/images/` zetten, `npm run images` draaien en `<Picture src="/images/naam.jpg" ... sizes="..." />` gebruiken (`src/components/Picture.tsx`). De hero wordt met `<link rel="preload">` vooraf geladen.
+- **JavaScript laadt na de pagina**: `scripts/defer-scripts.mjs` (postbuild) verplaatst de Next.js-bundels naar een kleine lader die pas na `window.load` start. De pagina is daardoor eerst zichtbaar, daarna interactief (menu, "nu geopend", kaart). Client-componenten krijgen hun gegevens als props mee, zodat `site.ts` en het afbeeldingsmanifest niet in de browserbundel belanden.
+- **Google Maps** laadt pas na een klik op "Kaart tonen" (`MapEmbed`), TikTok pas na een klik op een video.
+- **Kleuren**: knoppen en tekst gebruiken `--color-brand` (#c8104e, contrast 5,8:1 op wit).
+- **Interne links** zijn gewone `<a>`-tags (geen `next/link`): de host bewaart geen RSC-payloads, dus client-side navigatie heeft hier geen nut.
+- Controleren: `npm run build && npm start` en in een tweede terminal `npm run lighthouse` (of PageSpeed Insights op de live site).
+
 ## Deployen
 
 **Live-situatie:** Plesk-server van fusey.nl (`mail.fusey.nl:8443`), domein `barbershopdeschaar.nl`, document root `/site`. De oude WordPress-site staat in `/httpdocs` (rollback = document root terugzetten op `httpdocs`).
